@@ -9,3 +9,13 @@ case "$1" in
     *) 
         echo "Default"
 esac
+
+
+EXTENSIONS=("ZIP" "RAR" "EXE" "TAR")
+
+select option in ${EXTENSIONS[@]};
+do
+    echo "Selected Extension Number is $REPLY"
+    echo "Selected Extension is $option"
+done
+
