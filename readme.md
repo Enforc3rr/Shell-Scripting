@@ -31,17 +31,17 @@
 - Options are of Three Different types :
     1) `-R (Recursive)` : When we want to change permission of a file including it's parent directory and all files present in it.
     2) `-f (force)` : When we want to change the permissions of a file by force.
-    3) `-v (verbose)` 
--There are Three Different Types Of account privelage holders =
+    3) `-v (verbose)`
+- There are Three Different Types Of account privelage holders =
     1) Owner
     2) Group
     3) Others
--There are Three Different Types Of account permissions a file/directory can hold =
+- There are Three Different Types Of account permissions a file/directory can hold =
     1) read (r) : 4
     2) write (2) : 2
     3) execute (x) : 1
     So , In order to make owner to be able to `rwx` on a file while not allowing group to be able to write on a file and others to only view the file . we can do it by `chmod 754 file` , this 7 was decided up by adding (4+2+1) 
--Here Entire Line is divided into Multiple Parts 
+- Here Entire Line is divided into Multiple Parts 
     - `-rwxr-xr-x` being the permissions it is comprised of multiple elements like first `-` denotes whether It is a directory(for direc it would be `d`) or a file.
         - After initial `-/d` , everything is basically paired up and in example 1 : `rwx` will denote permission of owner , while next three elements will denote the permissions of group and last three denote that of others.
 
