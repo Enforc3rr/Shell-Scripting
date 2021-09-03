@@ -40,7 +40,7 @@
     1) read (r) : 4
     2) write (2) : 2
     3) execute (x) : 1
-    So , In order to make owner to be able to `rwx` on a file while not allowing group to be able to write on a file and others to only view the file . we can do it by `chmod ` 
+    So , In order to make owner to be able to `rwx` on a file while not allowing group to be able to write on a file and others to only view the file . we can do it by `chmod 754 file` , this 7 was decided up by adding (4+2+1) 
 -Here Entire Line is divided into Multiple Parts 
     - `-rwxr-xr-x` being the permissions it is comprised of multiple elements like first `-` denotes whether It is a directory(for direc it would be `d`) or a file.
         - After initial `-/d` , everything is basically paired up and in example 1 : `rwx` will denote permission of owner , while next three elements will denote the permissions of group and last three denote that of others.
